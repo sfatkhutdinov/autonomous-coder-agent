@@ -1,8 +1,7 @@
 import requests
 
 class AutonomousCoderAgent:
-    def __init__(self, base_url='http://localhost:10000/api', 
-                 model_name='qwen2.5:latest'):
+    def __init__(self, base_url='http://localhost:10000/api', model_name='qwen2.5:latest'):
         self.base_url = base_url
         self.model_name = model_name
 
