@@ -1,0 +1,5 @@
+venv/
+_pycache_/
+*.log
+*.pyc
+.snapshots/
