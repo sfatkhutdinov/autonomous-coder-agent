@@ -26,7 +26,9 @@ class AutonomousCoderAgent:
                         if 'text' in json_obj:
                             generated_text.append(json_obj['text'])
                 
-                return f"Generated code: {''.join(generated_text)}"
+                # Ensure we return a non-empty string
+                final_code = ''.join(generated_text) or "No code generated"
+                return f"Generated code: {final_code}"
             else:
                 raise Exception(f"Error generating code: {response.content.decode('utf-8')}")
         
